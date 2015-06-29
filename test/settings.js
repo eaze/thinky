@@ -88,7 +88,8 @@ describe('Options', function(){
 
     assert.deepEqual(doc._getOptions(), {
       timeFormat: 'raw',
-      validate: 'onsave'
+      validate: 'onsave',
+      context: {}
     })
      
     // Make sure we didn't messed up the global options
@@ -97,7 +98,8 @@ describe('Options', function(){
       enforce_extra: 'strict',
       enforce_missing: true,
       enforce_type: 'strict',
-      validate: 'oncreate'
+      validate: 'oncreate',
+      context: {}
     });
   });
 })
